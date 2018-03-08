@@ -6,18 +6,27 @@
 
 <body>
 
-<% include ../partials/nav.ejs %>
+  <% include ../partials/nav.ejs %>
 
-<div class="container">
-<h2>Database Results</h2>
-
-<ul>
-    <% results.forEach(function(r) { %>
-        <li><%= r.id %> - <%= r.name %></li>
-    <% }); %>
-</ul>
-
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/lang-logo.png">
+    </a>
+    <h1>Postal Rate Calculator</h1>
+  </div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <h2>Weight:</h2>
+        <p><%= weight %></p>
+        <h2>Mail Type:</h2>
+        <p><%= mail %></p>
+    </div>
+  </div> <!-- row -->
+</div>
+
 
 </body>
 </html>
